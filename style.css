@@ -1,0 +1,16 @@
+﻿/*
+Theme Name: NoorSafar Theme
+Theme URI: https://noorsafar.com
+Author: NoorSafar Technical Team
+Author URI: https://noorsafar.com
+Description: NoorSafar — Islamic travel & pilgrimage theme. Component-based homepage matching the locked Web Demo (emerald/gold/ivory). Includes 3D/2D effects, auto zoom-out hero, gold text transition, scroll reveal, card depth, reduced-motion handling, RTL/Urdu + Arabic + English. Requires NoorSafar Core plugin for booking, prayer times, and tasbih.
+Version: 3.0.0
+Text Domain: noorsafar-theme
+Requires at least: 6.3
+Requires PHP: 8.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Tags: custom-background, custom-logo, featured-images, translation-ready, rtl-language-support, e-commerce, theme-options, threaded-comments
+*/
+
+@import url('assets/css/noorsafar-design.css');

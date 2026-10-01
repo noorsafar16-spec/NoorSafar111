@@ -1,0 +1,1612 @@
+{\rtf1\fbidis\ansi\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}{\f2\fnil\fcharset1 Cambria Math;}{\f3\fnil\fcharset1 Segoe UI Symbol;}{\f4\fnil\fcharset178 Calibri;}}
+{\*\generator Riched20 10.0.19041}{\*\mmathPr\mmathFont2\mwrapIndent1440 }\viewkind4\uc1 
+\pard\ltrpar\sa200\sl276\slmult1\f0\fs22\lang9 NOORSAFAR \f1\emdash  FINAL DESIGN & PRODUCTION IMPLEMENTATION MASTER INSTRUCTION\par
+1. Project identity\par
+\par
+Project: NoorSafar\par
+Concept: The Journey of Light\par
+Platform: WordPress\par
+Theme: noorsafar-theme\par
+Core plugin: noorsafar-core\par
+Current state: Visual reconstruction complete; runtime/functional certification pending.\par
+\par
+The objective is to produce a complete, professional, production-ready NoorSafar WordPress website that can be installed on a clean WordPress staging environment and, after successful QA, uploaded to the live website.\par
+\par
+The implementation must preserve the established NoorSafar visual identity and must not introduce unnecessary redesigns.\par
+\par
+The project should be treated as a premium Islamic travel platform combining:\par
+\par
+Hajj\par
+Umrah\par
+Islamic journeys\par
+Ziyarat\par
+Halal tourism\par
+Travel programs\par
+Islamic knowledge\par
+Prayer tools\par
+Qibla\par
+Islamic calendar\par
+Travel resources\par
+Community/contact functionality\par
+2. MOST IMPORTANT RULE\par
+Do not start by rebuilding the theme.\par
+\par
+The existing theme package is the current visual baseline.\par
+\par
+The current package already contains the visual reconstruction.\par
+\par
+Therefore:\par
+\par
+Inspect \f2\u8594?\f1  \f0 understand \f2\u8594?\f1  \f0 validate \f2\u8594?\f1  \f0 complete \f2\u8594?\f1  \f0 test \f2\u8594?\f1  \f0 fix \f2\u8594?\f1  \f0 package.\par
+\par
+Do not:\par
+\par
+redesign the homepage from scratch\par
+replace the established visual system\par
+introduce another theme framework\par
+add Bootstrap\par
+add WPBakery\par
+add Slider Revolution\par
+migrate the theme to another page builder\par
+replace the existing architecture merely because another architecture is preferred\par
+create duplicate theme systems\par
+create competing CSS systems\par
+create multiple versions of the same component\par
+move all plugin functionality into functions.php\par
+\par
+If a genuine defect exists, fix the defect at source.\par
+\par
+If something is merely a matter of personal design preference, do not redesign it.\par
+\par
+3. Authoritative project files\par
+\par
+The following are authoritative project materials.\par
+\par
+Theme\par
+noorsafar-theme.zip\par
+\par
+Expected internal structure:\par
+\par
+noorsafar-theme/\par
+Master specification\par
+NOORSAFAR-MASTER-BUILD-SPEC.MD\par
+Plugin specification\par
+PLUGIN-DELIVERABLE.md\par
+Demo package specification\par
+SEED-PACKAGES.md\par
+Seed implementation\par
+inc/seed-demo-content.php\par
+\par
+The master build specification must be read before modifying implementation.\par
+\par
+4. Current package status\par
+\par
+The current visual package has already completed the following:\par
+\par
+Header reconstruction\par
+Hero reconstruction\par
+Feature strip\par
+Featured journeys/packages\par
+Destinations section\par
+Trust/partner section\par
+Audio section\par
+Gallery\par
+Testimonials\par
+CTA\par
+Footer\par
+Canonical asset cleanup\par
+Duplicate asset archiving\par
+Logo implementation\par
+SVG icon replacement\par
+Responsive layout foundations\par
+Theme JavaScript syntax verification\par
+PHP structural brace verification\par
+Image-reference verification\par
+\par
+Current validation:\par
+\par
+45 PHP files\par
+\f2\u8594?\f1  \f0 brace-balanced\par
+\par
+theme.js\par
+\f2\u8594?\f1  \f0 node --check PASS\par
+\par
+image references\par
+\f2\u8594?\f1  \f0 resolved\par
+\par
+ZIP\par
+\f2\u8594?\f1  \f0 valid\par
+\par
+theme root\par
+\f2\u8594?\f1  \f0 single noorsafar-theme/ directory\par
+\par
+This means the current package is a staging candidate, not yet a production-certified package.\par
+\par
+5. Final status definition\par
+\par
+Use this exact status terminology.\par
+\par
+Current\par
+\par
+Visual Reconstruction Complete \f1\emdash  Staging Candidate \emdash  Runtime/Functional Certification Pending\par
+\par
+Do not call it:\par
+\par
+Production Ready\par
+Production Certified\par
+Fully Complete\par
+Launch Ready\par
+\par
+until the remaining runtime work passes.\par
+\par
+6. Brand identity\par
+\par
+The design must consistently use the NoorSafar visual language.\par
+\par
+Primary colors\par
+Deep Emerald\par
+#0A3B2C\par
+\par
+Primary brand/background color.\par
+\par
+Use for:\par
+\par
+navigation\par
+major dark sections\par
+footer\par
+hero overlays\par
+premium cards\par
+CTA areas\par
+Dark Teal\par
+#0D5C58\par
+\par
+Use for:\par
+\par
+secondary sections\par
+accents\par
+interactive states\par
+supporting surfaces\par
+Warm Ivory\par
+#FDFBF7\par
+\par
+Use for:\par
+\par
+primary light backgrounds\par
+cards\par
+content sections\par
+reading areas\par
+negative space\par
+Antique Gold\par
+#C5A059\par
+\par
+Use for:\par
+\par
+buttons\par
+icons\par
+dividers\par
+highlights\par
+active states\par
+decorative Islamic details\par
+premium visual accents\par
+\par
+Gold must remain an accent, not become the dominant page color.\par
+\par
+7. Design philosophy\par
+\par
+The final site must communicate:\par
+\par
+Islamic elegance\par
+trust\par
+calm\par
+premium travel\par
+spiritual depth\par
+authenticity\par
+modern technology\par
+generous whitespace\par
+high-quality photography\par
+restrained animation\par
+\par
+Visual direction:\par
+\par
+Cinematic grounded light + HDR editorial travel photography + quiet luxury + subtle Islamic geometry.\par
+\par
+Avoid:\par
+\par
+excessive gradients\par
+excessive glassmorphism\par
+excessive glowing effects\par
+cartoonish Islamic graphics\par
+generic travel-template appearance\par
+clutter\par
+excessive animation\par
+oversized typography everywhere\par
+random decorative elements\par
+cheap-looking stock imagery\par
+8. Header\par
+\par
+The header must use the approved NoorSafar logo.\par
+\par
+Current implementation:\par
+\par
+01_header_logo.png\par
+\par
+The logo must:\par
+\par
+preserve its natural proportions\par
+never be stretched\par
+never be distorted\par
+remain clearly visible\par
+work against the selected header background\par
+scale correctly on mobile\par
+\par
+The top utility bar that previously existed has been removed.\par
+\par
+Do not reintroduce it unless explicitly required.\par
+\par
+Desktop concept\par
+[ LOGO ]    Journeys   Destinations   Resources   About   Contact    [ CTA ]\par
+\par
+The exact menu labels must follow the existing master specification.\par
+\par
+Mobile\par
+\par
+Use:\par
+\par
+[ LOGO ]                              [ MENU ]\par
+\par
+Menu opens cleanly.\par
+\par
+Requirements:\par
+\par
+keyboard accessible\par
+focus visible\par
+ESC closes menu\par
+no body-scroll problems\par
+no horizontal overflow\par
+9. Hero section\par
+\par
+The hero is one of the most important areas.\par
+\par
+Current implementation references:\par
+\par
+assets/images/02_hero_visual.png\par
+\par
+However:\par
+\par
+02_hero_visual.png is not automatically considered owner-approved final artwork.\par
+\par
+Claude must not reinterpret the artwork.\par
+\par
+The implementation should make replacement easy:\par
+\par
+assets/images/02_hero_visual.png\par
+\par
+If the owner supplies a replacement image with the same filename and compatible dimensions, the theme should continue working without PHP/template changes.\par
+\par
+Hero structure\par
+\par
+Conceptually:\par
+\par
+------------------------------------------------\par
+|                                              |\par
+|              HERO IMAGE                      |\par
+|                                              |\par
+|        NoorSafar                             |\par
+|        [headline]                            |\par
+|        [supporting text]                     |\par
+|                                              |\par
+|        [Primary CTA] [Secondary CTA]         |\par
+|                                              |\par
+------------------------------------------------\par
+\par
+Hero requirements:\par
+\par
+responsive image\par
+correct focal point\par
+readable text contrast\par
+no excessive overlay\par
+mobile crop must remain visually meaningful\par
+no layout shift\par
+lazy loading where appropriate\par
+preload only if appropriate for LCP\par
+optimized image dimensions\par
+Example implementation behavior\par
+\par
+Desktop:\par
+\par
+hero height: approximately 80\endash 90vh\par
+\par
+Tablet:\par
+\par
+hero height: approximately 70\endash 80vh\par
+\par
+Mobile:\par
+\par
+hero height: auto/min-height\par
+\par
+Do not hard-code these values if the existing design system provides better values; use the project's existing CSS variables.\par
+\par
+10. Feature strip\par
+\par
+The feature strip uses circular badges containing line-style SVG icons.\par
+\par
+Do not return to emoji icons.\par
+\par
+Example:\par
+\par
+   \f3\u9711?\f1               \f3\u9711?\f1               \f3\u9711?\f1               \f3\u9711?\f0\par
+  Prayer         Qibla         Journeys        Ziyarat\par
+   Tools         Finder         Packages        Guide\par
+\par
+Design:\par
+\par
+ivory/light background\par
+gold circular accent\par
+dark emerald text\par
+thin line icons\par
+subtle hover movement\par
+accessible labels\par
+\par
+Animation example:\par
+\par
+hover:\par
+translateY(-4px)\par
+\par
+Keep the animation subtle.\par
+\par
+11. Featured journeys\par
+\par
+The package cards should be prepared for real WordPress content.\par
+\par
+Example:\par
+\par
+\f3\u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\f0\par
+\f3\u9474?\f1                             \f3\u9474?\f0\par
+\f3\u9474?\f1        \f0 PACKAGE IMAGE        \f3\u9474?\f0\par
+\f3\u9474?\f1                             \f3\u9474?\f0\par
+\f3\u9500?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9508?\f0\par
+\f3\u9474?\f1  \f0 Urs & Ziyarat Journey      \f3\u9474?\f0\par
+\f3\u9474?\f1  \f0 Pakistan                   \f3\u9474?\f0\par
+\f3\u9474?\f1                             \f3\u9474?\f0\par
+\f3\u9474?\f1  \f0 Short description...       \f3\u9474?\f0\par
+\f3\u9474?\f1                             \f3\u9474?\f0\par
+\f3\u9474?\f1  \f0 [ View Journey ]           \f3\u9474?\f0\par
+\f3\u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\f0\par
+\par
+The system must support:\par
+\par
+featured image\par
+title\par
+destination\par
+date\par
+duration\par
+description\par
+price/status\par
+CTA\par
+optional badge\par
+\par
+Pricing must not be automatically calculated.\par
+\par
+Use statuses such as:\par
+\par
+Draft\par
+Coming Soon\par
+Price Not Set\par
+Price Coming Soon\par
+Contact for Price\par
+\par
+The final published price is manually controlled.\par
+\par
+12. Pricing architecture\par
+\par
+NoorSafar must use manual pricing.\par
+\par
+Internal workflow:\par
+\par
+Market Assessment\par
+\f1         \f2\u8595?\f0\par
+Government Requirements\par
+\f1         \f2\u8595?\f0\par
+Taxes / Charges\par
+\f1         \f2\u8595?\f0\par
+Business Pricing Decision\par
+\f1         \f2\u8595?\f0\par
+Final Published Price\par
+\f1         \f2\u8595?\f0\par
+Publish\par
+\par
+Possible internal fields:\par
+\par
+Market/Base Cost\par
+Government/Regulatory\par
+Taxes & Charges\par
+Other Charges\par
+Final Published Price\par
+\par
+Do not create a formula that automatically determines customer pricing unless explicitly instructed later.\par
+\par
+13. Destinations section\par
+\par
+The reconstructed design is:\par
+\par
+--------------------------------------------------\par
+| LEFT TEXT              | RIGHT DESTINATION     |\par
+|                        |                      |\par
+| Explore Islamic        | [Card] [Card]        |\par
+| Journeys               | [Card] [Card]        |\par
+|                        |                      |\par
+| [Explore]              | <     >              |\par
+--------------------------------------------------\par
+\par
+Use the dark emerald band.\par
+\par
+Cards should support:\par
+\par
+image\par
+location\par
+title\par
+short description\par
+CTA\par
+\par
+Carousel controls must be keyboard accessible.\par
+\par
+14. Trust / Partner section\par
+\par
+The reconstructed structure is:\par
+\par
+---------------------------------------------------------\par
+| INTRO/CONTENT | QUOTE + BENEFITS | QURAN/IMAGE       |\par
+---------------------------------------------------------\par
+\par
+Purpose:\par
+\par
+trust\par
+authenticity\par
+partner credibility\par
+spiritual identity\par
+\par
+Do not fill the area with generic marketing claims.\par
+\par
+Every trust claim must be based on something the organization can substantiate.\par
+\par
+15. Audio section\par
+\par
+Use the established three-column layout.\par
+\par
+Possible structure:\par
+\par
+-------------------------------------------------\par
+| Audio 1       | Audio 2       | Audio 3       |\par
+|               |               |               |\par
+| Title         | Title         | Title         |\par
+| description   | description   | description   |\par
+| \f3\u9654?\f1  \f0 Play        | \f3\u9654?\f1  \f0 Play        | \f3\u9654?\f1  \f0 Play        |\par
+-------------------------------------------------\par
+\par
+Requirements:\par
+\par
+accessible controls\par
+keyboard operation\par
+visible play/pause state\par
+no autoplay with sound\par
+responsive layout\par
+16. Gallery\par
+\par
+Current structure:\par
+\par
+--------------------------------------------------\par
+| INTRO TEXT       | IMAGE | IMAGE | IMAGE | ... |\par
+--------------------------------------------------\par
+\par
+The gallery should use the approved project imagery.\par
+\par
+Do not invent new imagery if the supplied asset library is intended to be authoritative.\par
+\par
+Image requirements:\par
+\par
+responsive\par
+optimized\par
+meaningful alt text\par
+no stretching\par
+consistent aspect ratios where intended\par
+lightbox only if specified by the master design\par
+17. Testimonials\par
+\par
+Dark emerald band.\par
+\par
+Concept:\par
+\par
+--------------------------------------------------\par
+| TESTIMONIAL     |                    |\par
+|                 |  "Quote..."      |\par
+|                 |  Name            |\par
+|                 |  Journey          |\par
+--------------------------------------------------\par
+\par
+Do not use fabricated testimonials as real customer reviews.\par
+\par
+If demonstration data is necessary, clearly identify it as demo content.\par
+\par
+18. CTA\par
+\par
+The CTA is deliberately a thin cinematic strip.\par
+\par
+Do not transform it into a giant generic SaaS-style banner.\par
+\par
+Example:\par
+\par
+--------------------------------------------------\par
+| Begin Your Journey         [ Explore ]         |\par
+--------------------------------------------------\par
+\par
+Keep it premium and restrained.\par
+\par
+19. Footer\par
+\par
+Current footer uses six conceptual columns:\par
+\par
+NoorSafar\par
+Journeys\par
+Destinations\par
+Resources\par
+Company\par
+Contact\par
+\par
+Footer requirements:\par
+\par
+responsive\par
+accessible\par
+consistent typography\par
+social links where configured\par
+legal links\par
+copyright\par
+no broken URLs\par
+no empty placeholder links in production\par
+20. WordPress architecture\par
+\par
+Keep the separation:\par
+\par
+noorsafar-theme\par
+        +\par
+noorsafar-core\par
+Theme responsibility\par
+\par
+The theme handles:\par
+\par
+presentation\par
+templates\par
+styles\par
+frontend interaction\par
+layout\par
+visual components\par
+theme-specific UI\par
+Core plugin responsibility\par
+\par
+The plugin handles:\par
+\par
+CPTs\par
+booking/program logic\par
+centralized settings\par
+dynamic business logic\par
+prayer-time data\par
+APIs\par
+reusable data structures\par
+\par
+Do not put all business functionality into:\par
+\par
+functions.php\par
+21. Core plugin requirements\par
+\par
+The missing noorsafar-core must be implemented according to:\par
+\par
+PLUGIN-DELIVERABLE.md\par
+\par
+At minimum, validate the requirements for:\par
+\par
+Custom post types\par
+\par
+Existing project architecture references:\par
+\par
+pakistan_tour\par
+ns_program\par
+ns_media\par
+\par
+Also account for:\par
+\par
+tour\par
+darbar\par
+ziyarat\par
+\par
+where specified by the master architecture.\par
+\par
+Do not create duplicate CPTs with slightly different names.\par
+\par
+22. Pakistan tours\par
+\par
+Pakistan tour content must integrate into the same relevant program/package architecture.\par
+\par
+Do not leave Pakistan tours isolated from the primary booking/program system if the specification requires unified discovery.\par
+\par
+23. Ziyarat\par
+\par
+ziyarat must have an appropriate frontend template.\par
+\par
+Do not leave the CPT registered but visually inaccessible.\par
+\par
+For example:\par
+\par
+/archive-ziyarat.php\par
+single-ziyarat.php\par
+\par
+if that architecture is appropriate to the current implementation.\par
+\par
+Do not create files merely for the sake of naming; integrate them according to WordPress template hierarchy.\par
+\par
+24. Booking architecture\par
+\par
+Booking should be designed around real data rather than static HTML.\par
+\par
+Example:\par
+\par
+Program\par
+\f1    \f2\u8595?\f0\par
+Available dates\par
+\f1    \f2\u8595?\f0\par
+Capacity\par
+\f1    \f2\u8595?\f0\par
+Registration\par
+\f1    \f2\u8595?\f0\par
+Confirmation\par
+\par
+Capacity must be enforced if capacity is part of the agreed functionality.\par
+\par
+Never present a package as bookable if the underlying booking functionality does not exist.\par
+\par
+25. WhatsApp integration\par
+\par
+WhatsApp CTA must generate a valid destination based on configured settings.\par
+\par
+Example:\par
+\par
+Book / Ask on WhatsApp\par
+\f1         \f2\u8595?\f0\par
+Configured WhatsApp number\par
+\f1         \f2\u8595?\f0\par
+Pre-filled message\par
+\par
+Example message:\par
+\par
+Assalamualaikum,\par
+I am interested in the NoorSafar [Program Name].\par
+Please provide registration details.\par
+\par
+The phone number must come from centralized settings rather than being duplicated throughout templates.\par
+\par
+26. Prayer times\par
+\par
+Prayer functionality must not be simulated as live data.\par
+\par
+The final system must define:\par
+\par
+location\par
+method/provider\par
+timezone\par
+calculation settings\par
+refresh behavior\par
+fallback behavior\par
+\par
+If an external API is used:\par
+\par
+API\par
+\f1  \f2\u8595?\f0\par
+server-side handling where appropriate\par
+\f1  \f2\u8595?\f0\par
+WordPress settings/cache\par
+\f1  \f2\u8595?\f0\par
+frontend display\par
+\par
+If the API fails:\par
+\par
+No misleading fake live values.\par
+\par
+Show an appropriate fallback message.\par
+\par
+27. Qibla\par
+\par
+Qibla functionality should support:\par
+\par
+device orientation where supported\par
+permission handling\par
+fallback compass presentation\par
+clear instructions\par
+mobile-first behavior\par
+\par
+Do not assume every browser/device supports orientation APIs.\par
+\par
+28. Islamic calendar\par
+\par
+Calendar functionality should support:\par
+\par
+Gregorian date\par
+Hijri date\par
+appropriate localization\par
+Urdu/Arabic/English presentation where implemented\par
+\par
+Do not hard-code a single date.\par
+\par
+29. Multilingual architecture\par
+\par
+The site must support:\par
+\par
+English\par
+Urdu\par
+Arabic\par
+\par
+RTL must be properly supported.\par
+\par
+Do not implement RTL merely by:\par
+\par
+direction: rtl;\par
+\par
+The following must also be checked:\par
+\par
+margins\par
+padding\par
+flex direction\par
+icons\par
+arrows\par
+navigation\par
+forms\par
+cards\par
+modal alignment\par
+carousel direction\par
+typography\par
+buttons\par
+breadcrumbs\par
+\par
+Example:\par
+\par
+English:\par
+Explore Journey \f2\u8594?\f0\par
+\par
+Urdu:\par
+\f2\u8592?\f1  \f4\rtlch\lang1025\'d3\'dd\'d1 \'cf\u1740?\'98\'aa\u1740?\'9f\f0\ltrch\lang1033\par
+\par
+The visual direction must feel intentional rather than mirrored mechanically.\par
+\par
+30. Currency\par
+\par
+Currency must follow the selected language/menu configuration as previously specified:\par
+\par
+Urdu \f2\u8594?\f1  \f0 PKR\par
+Arabic \f2\u8594?\f1  \f0 configured Arabic currency\par
+English \f2\u8594?\f1  \f0 USD\par
+\par
+However, because business pricing is manually controlled, currency conversion must not automatically change the underlying published business price unless explicitly configured.\par
+\par
+The system should distinguish between:\par
+\par
+stored business price\par
+\par
+and\par
+\par
+display currency\par
+\par
+before implementing conversion.\par
+\par
+31. Responsive requirements\par
+\par
+The website must be tested at minimum at:\par
+\par
+320px\par
+375px\par
+390px\par
+414px\par
+768px\par
+1024px\par
+1280px\par
+1440px\par
+1920px\par
+\par
+Check:\par
+\par
+no horizontal scrolling\par
+no clipped text\par
+no overlapping buttons\par
+no oversized images\par
+no broken navigation\par
+no modal overflow\par
+no inaccessible controls\par
+no broken grids\par
+32. Accessibility\par
+\par
+The final implementation must include:\par
+\par
+semantic HTML\par
+heading hierarchy\par
+accessible labels\par
+keyboard navigation\par
+visible focus states\par
+alt text\par
+appropriate button/link semantics\par
+sufficient contrast\par
+modal focus handling\par
+ESC-to-close where appropriate\par
+no keyboard traps\par
+\par
+Example:\par
+\par
+Bad:\par
+\par
+<div onclick="openModal()">View</div>\par
+\par
+Better:\par
+\par
+<button type="button">View</button>\par
+\par
+Use actual semantic controls wherever possible.\par
+\par
+33. Quick View / modal\par
+\par
+The Quick View system is particularly important because it previously required a targeted fix.\par
+\par
+It must preserve the page's existing inline overflow state.\par
+\par
+Required behavior:\par
+\par
+Open\par
+\f1  \f2\u8595?\f0\par
+Modal visible\par
+\f1  \f2\u8595?\f0\par
+Body scrolling controlled\par
+\f1  \f2\u8595?\f0\par
+User closes modal\par
+\f1  \f2\u8595?\f0\par
+Original overflow state restored\par
+\par
+Test:\par
+\par
+open\par
+close button\par
+ESC\par
+outside click\par
+keyboard focus\par
+repeated open/close\par
+mobile\par
+RTL\par
+multiple cards\par
+\par
+Example failure:\par
+\par
+User closes modal\par
+\f2\u8594?\f1  \f0 page remains permanently locked\par
+\par
+This must not happen.\par
+\par
+34. JavaScript\par
+\par
+The JavaScript must degrade gracefully.\par
+\par
+Modules should not assume every optional element exists.\par
+\par
+Bad:\par
+\par
+document.querySelector('.slider').addEventListener(...)\par
+\par
+if .slider may not exist.\par
+\par
+Safer:\par
+\par
+const slider = document.querySelector('.slider');\par
+\par
+if (slider) \{\par
+    // initialize\par
+\}\par
+\par
+No console errors should appear on pages where an optional component is absent.\par
+\par
+35. JavaScript-disabled fallback\par
+\par
+The site must remain usable without JavaScript for core navigation and content.\par
+\par
+For example:\par
+\par
+Navigation \f2\u8594?\f1  \f0 still accessible\par
+Package links \f2\u8594?\f1  \f0 still work\par
+Pages \f2\u8594?\f1  \f0 still render\par
+Important content \f2\u8594?\f1  \f0 still visible\par
+\par
+JavaScript may enhance:\par
+\par
+sliders\par
+animations\par
+quick view\par
+interactive tools\par
+\par
+but should not unnecessarily destroy basic content accessibility.\par
+\par
+36. Animation system\par
+\par
+Animations should support the design rather than dominate it.\par
+\par
+Approved conceptual effects include:\par
+\par
+Scroll reveal\par
+opacity: 0 \f2\u8594?\f1  \f0 1\par
+transform: translateY(20px) \f2\u8594?\f1  \f0 0\par
+Hover lift\par
+translateY(-4px)\par
+Image zoom\par
+\par
+Very subtle:\par
+\par
+scale(1.00 \f2\u8594?\f1  \f0 1.04)\par
+Ken Burns\par
+\par
+Use only for large hero imagery.\par
+\par
+Parallax\par
+\par
+Use sparingly.\par
+\par
+Gold highlight\par
+\par
+Use for important interactions.\par
+\par
+Avoid continuous animations everywhere.\par
+\par
+37. Reduced-motion support\par
+\par
+Respect:\par
+\par
+@media (prefers-reduced-motion: reduce)\par
+\par
+When enabled:\par
+\par
+disable major parallax\par
+reduce transitions\par
+disable unnecessary continuous animation\par
+avoid motion-heavy hero effects\par
+38. SEO\par
+\par
+The final site should provide:\par
+\par
+correct title\par
+meta description\par
+canonical URL\par
+Open Graph metadata\par
+appropriate schema\par
+semantic headings\par
+image alt text\par
+clean URLs\par
+XML sitemap compatibility\par
+no accidental noindex\par
+\par
+The existing:\par
+\par
+inc/seo-schema.php\par
+\par
+must be preserved and checked.\par
+\par
+Do not create duplicate schema systems.\par
+\par
+39. Performance\par
+\par
+Before launch check:\par
+\par
+image sizes\par
+lazy loading\par
+LCP image handling\par
+CSS loading\par
+JS loading\par
+unnecessary assets\par
+duplicate files\par
+browser console\par
+network 404s\par
+\par
+The 22 duplicate aliases already archived must remain archived unless there is a documented reason to restore one.\par
+\par
+40. Asset architecture\par
+\par
+The active asset library should remain organized.\par
+\par
+Canonical assets:\par
+\par
+01_...\par
+02_...\par
+03_...\par
+...\par
+18_...\par
+\par
+and:\par
+\par
+hero/\par
+\par
+Duplicate aliases belong in:\par
+\par
+assets/images/archive-duplicate-aliases/\par
+\par
+Do not create another uncontrolled asset collection.\par
+\par
+41. Asset replacement rule\par
+\par
+If the owner replaces an image but keeps the same filename:\par
+\par
+02_hero_visual.png\par
+\par
+the implementation should automatically continue using the replacement.\par
+\par
+This is preferable to changing template code merely because an image was updated.\par
+\par
+42. Demo content\par
+\par
+The seed system exists for controlled demonstration.\par
+\par
+Relevant files:\par
+\par
+inc/seed-demo-content.php\par
+SEED-PACKAGES.md\par
+\par
+Demo content must be clearly distinguishable from genuine production data.\par
+\par
+Never present fictional customer reviews, fake partner claims, or fabricated certifications as genuine.\par
+\par
+43. Content example\par
+\par
+For a package:\par
+\par
+Title:\par
+Urs & Ziyarat Journey\par
+\par
+Destination:\par
+Hasan Abdal / Attock\par
+\par
+Status:\par
+Coming Soon\par
+\par
+Price:\par
+Price Not Set\par
+\par
+CTA:\par
+View Journey\par
+\par
+The exact production content should come from the site's content management system rather than being permanently embedded into template HTML.\par
+\par
+44. Forms\par
+\par
+Forms must be tested end-to-end.\par
+\par
+Check:\par
+\par
+Frontend\par
+\f1  \f2\u8595?\f0\par
+Validation\par
+\f1  \f2\u8595?\f0\par
+Submission\par
+\f1  \f2\u8595?\f0\par
+Server processing\par
+\f1  \f2\u8595?\f0\par
+Email/storage\par
+\f1  \f2\u8595?\f0\par
+Success response\par
+\par
+Never display:\par
+\par
+"Thank you, your booking has been submitted."\par
+\par
+unless the submission actually succeeded.\par
+\par
+45. Email\par
+\par
+If wp_mail() is used:\par
+\par
+verify that the submission triggers it\par
+verify recipient configuration\par
+verify failure handling\par
+test on staging\par
+\par
+SMTP configuration should be handled through an appropriate WordPress mail solution rather than embedding credentials into theme code.\par
+\par
+46. Security\par
+\par
+Check:\par
+\par
+nonce verification\par
+capability checks\par
+sanitization\par
+escaping\par
+validation\par
+safe redirects\par
+AJAX nonce handling\par
+REST permission checks\par
+no exposed secrets\par
+no API keys committed directly into public source\par
+\par
+Example:\par
+\par
+esc_html()\par
+esc_attr()\par
+esc_url()\par
+wp_kses_post()\par
+sanitize_text_field()\par
+\par
+Use the appropriate function for the data context.\par
+\par
+47. WordPress coding standards\par
+\par
+Use:\par
+\par
+WordPress hooks\par
+enqueue APIs\par
+template hierarchy\par
+sanitization\par
+escaping\par
+internationalization\par
+nonces\par
+capability checks\par
+\par
+Avoid:\par
+\par
+hardcoded URLs\par
+inline duplicated business logic\par
+global variables where unnecessary\par
+direct SQL where WordPress APIs suffice\par
+arbitrary filesystem assumptions\par
+48. Clean installation test\par
+\par
+Claude must eventually test the package as though it were being installed by another developer.\par
+\par
+Fresh environment:\par
+\par
+WordPress\par
++\par
+NoorSafar theme\par
++\par
+noorsafar-core\par
++\par
+required approved plugins only\par
+\par
+Do not rely on hidden dependencies from the development environment.\par
+\par
+49. Plugin dependency test\par
+\par
+The site must behave predictably when:\par
+\par
+noorsafar-core = active\par
+\par
+and also when:\par
+\par
+noorsafar-core = temporarily inactive\par
+\par
+The theme should not fatally break simply because the optional business layer is unavailable.\par
+\par
+Instead, dynamic features should gracefully indicate that the required functionality is unavailable.\par
+\par
+50. PHP validation\par
+\par
+Run:\par
+\par
+php -l file.php\par
+\par
+for every PHP file.\par
+\par
+Example Windows PowerShell approach:\par
+\par
+Get-ChildItem -Recurse -Filter *.php |\par
+ForEach-Object \{\par
+    php -l $_.FullName\par
+\}\par
+\par
+Expected result:\par
+\par
+No syntax errors detected\par
+\par
+No PHP file should be considered certified until this passes.\par
+\par
+51. JavaScript validation\par
+\par
+Existing validation:\par
+\par
+node --check theme.js\par
+\par
+must continue passing.\par
+\par
+Any newly introduced JS file should also be syntax checked.\par
+\par
+52. Browser console\par
+\par
+The staging browser console must be clean.\par
+\par
+Investigate:\par
+\par
+Uncaught TypeError\par
+ReferenceError\par
+404\par
+CORS errors\par
+failed API calls\par
+undefined functions\par
+missing assets\par
+\par
+Do not simply hide errors.\par
+\par
+53. Network inspection\par
+\par
+Check the browser Network panel for:\par
+\par
+404\par
+500\par
+403\par
+failed CSS\par
+failed JS\par
+failed images\par
+failed API requests\par
+\par
+Every unexpected failure must be investigated.\par
+\par
+54. Mobile QA\par
+\par
+Test:\par
+\par
+iPhone-size viewport\par
+Android-size viewport\par
+tablet viewport\par
+desktop viewport\par
+\par
+Pay special attention to:\par
+\par
+header\par
+menu\par
+hero crop\par
+cards\par
+sliders\par
+modal\par
+forms\par
+footer\par
+WhatsApp CTA\par
+55. RTL QA\par
+\par
+Switch to Urdu/Arabic and verify every major component.\par
+\par
+Especially:\par
+\par
+Header\par
+Hero\par
+Cards\par
+Arrows\par
+Forms\par
+Modal\par
+Gallery\par
+Footer\par
+\par
+Do not accept an RTL layout simply because the text direction changed.\par
+\par
+56. Final visual acceptance criteria\par
+\par
+A section is visually complete when:\par
+\par
+spacing is consistent\par
+typography hierarchy is correct\par
+images are correctly cropped\par
+buttons are aligned\par
+icons are consistent\par
+colors match the design system\par
+responsive behavior works\par
+RTL works\par
+hover/focus states work\par
+no accidental placeholder appears\par
+no console error is associated with the component\par
+57. Do not add unnecessary technology\par
+\par
+Unless explicitly required, do not introduce:\par
+\par
+Bootstrap\par
+WPBakery\par
+Slider Revolution\par
+React\par
+Vue\par
+another CSS framework\par
+another page builder\par
+Redux\par
+multiple competing animation libraries\par
+\par
+The goal is a maintainable WordPress theme, not a technology showcase.\par
+\par
+58. Final directory concept\par
+\par
+The final deliverable should conceptually remain:\par
+\par
+NoorSafar/\par
+\f3\u9474?\f0\par
+\f3\u9500?\u9472?\u9472?\f1  \f0 noorsafar-theme/\par
+\f3\u9474?\f1    \f3\u9500?\u9472?\u9472?\f1  \f0 style.css\par
+\f3\u9474?\f1    \f3\u9500?\u9472?\u9472?\f1  \f0 functions.php\par
+\f3\u9474?\f1    \f3\u9500?\u9472?\u9472?\f1  \f0 front-page.php\par
+\f3\u9474?\f1    \f3\u9500?\u9472?\u9472?\f1  \f0 header.php\par
+\f3\u9474?\f1    \f3\u9500?\u9472?\u9472?\f1  \f0 footer.php\par
+\f3\u9474?\f1    \f3\u9500?\u9472?\u9472?\f1  \f0 single.php\par
+\f3\u9474?\f1    \f3\u9500?\u9472?\u9472?\f1  \f0 archive.php\par
+\f3\u9474?\f1    \f3\u9500?\u9472?\u9472?\f1  \f0 search.php\par
+\f3\u9474?\f1    \f3\u9500?\u9472?\u9472?\f1  \f0 404.php\par
+\f3\u9474?\f1    \f3\u9474?\f0\par
+\f3\u9474?\f1    \f3\u9500?\u9472?\u9472?\f1  \f0 assets/\par
+\f3\u9474?\f1    \f3\u9474?\f1    \f3\u9500?\u9472?\u9472?\f1  \f0 css/\par
+\f3\u9474?\f1    \f3\u9474?\f1    \f3\u9500?\u9472?\u9472?\f1  \f0 js/\par
+\f3\u9474?\f1    \f3\u9474?\f1    \f3\u9492?\u9472?\u9472?\f1  \f0 images/\par
+\f3\u9474?\f1    \f3\u9474?\f0\par
+\f3\u9474?\f1    \f3\u9500?\u9472?\u9472?\f1  \f0 inc/\par
+\f3\u9474?\f1    \f3\u9500?\u9472?\u9472?\f1  \f0 template-parts/\par
+\f3\u9474?\f1    \f3\u9492?\u9472?\u9472?\f1  \f0 ...\par
+\f3\u9474?\f0\par
+\f3\u9500?\u9472?\u9472?\f1  \f0 noorsafar-core/\par
+\f3\u9474?\f1    \f3\u9500?\u9472?\u9472?\f1  \f0 noorsafar-core.php\par
+\f3\u9474?\f1    \f3\u9500?\u9472?\u9472?\f1  \f0 includes/\par
+\f3\u9474?\f1    \f3\u9500?\u9472?\u9472?\f1  \f0 admin/\par
+\f3\u9474?\f1    \f3\u9500?\u9472?\u9472?\f1  \f0 api/\par
+\f3\u9474?\f1    \f3\u9492?\u9472?\u9472?\f1  \f0 ...\par
+\f3\u9474?\f0\par
+\f3\u9500?\u9472?\u9472?\f1  \f0 NOORSAFAR-MASTER-BUILD-SPEC.MD\par
+\f3\u9500?\u9472?\u9472?\f1  \f0 PLUGIN-DELIVERABLE.md\par
+\f3\u9492?\u9472?\u9472?\f1  \f0 SEED-PACKAGES.md\par
+\par
+The exact existing directory structure takes precedence over this conceptual diagram.\par
+\par
+59. Build procedure Claude must follow\par
+PHASE A \f1\emdash  Inspection\par
+\par
+First inspect:\par
+\par
+noorsafar-theme.zip\par
+NOORSAFAR-MASTER-BUILD-SPEC.MD\par
+PLUGIN-DELIVERABLE.md\par
+SEED-PACKAGES.md\par
+\par
+Do not modify anything yet.\par
+\par
+Produce an internal inventory of:\par
+\par
+templates\par
+CSS\par
+JS\par
+images\par
+CPT references\par
+hooks\par
+APIs\par
+dependencies\par
+missing functions\par
+plugin expectations\par
+PHASE B \emdash  Architecture verification\par
+\par
+Confirm:\par
+\par
+Theme = presentation\par
+Core = business logic\par
+\par
+Identify every place where the theme expects noorsafar-core.\par
+\par
+Document those dependencies.\par
+\par
+PHASE C \emdash  Complete the core plugin\par
+\par
+Implement only what is documented.\par
+\par
+Do not invent unnecessary features.\par
+\par
+PHASE D \emdash  PHP validation\par
+\par
+Run php -l against every PHP file.\par
+\par
+Fix every syntax error.\par
+\par
+PHASE E \emdash  Build\par
+\par
+Generate:\par
+\par
+noorsafar-theme.zip\par
+noorsafar-core.zip\par
+\par
+Each ZIP must have the correct root directory.\par
+\par
+Correct:\par
+\par
+noorsafar-theme.zip\par
+\f3\u9492?\u9472?\u9472?\f1  \f0 noorsafar-theme/\par
+\par
+Not:\par
+\par
+noorsafar-theme.zip\par
+\f3\u9492?\u9472?\u9472?\f1  \f0 random-folder/\par
+\f1     \f3\u9492?\u9472?\u9472?\f1  \f0 noorsafar-theme/\par
+60. Staging installation\par
+\par
+Install on a clean WordPress instance.\par
+\par
+Recommended order:\par
+\par
+1. Install WordPress\par
+2. Install required approved plugins\par
+3. Install noorsafar-core\par
+4. Activate noorsafar-core\par
+5. Install noorsafar-theme\par
+6. Activate theme\par
+7. Configure site settings\par
+8. Configure menus\par
+9. Configure homepage\par
+10. Seed demo content if required\par
+61. Runtime QA checklist\par
+Homepage\par
+\par
+Check:\par
+\par
+Header\par
+Hero\par
+Feature strip\par
+Packages\par
+Destinations\par
+Trust\par
+Audio\par
+Gallery\par
+Testimonials\par
+CTA\par
+Footer\par
+Functional\par
+\par
+Check:\par
+\par
+Menus\par
+Search\par
+Forms\par
+Quick View\par
+Modal\par
+WhatsApp\par
+Booking\par
+CPTs\par
+Prayer times\par
+Qibla\par
+Calendar\par
+Technical\par
+\par
+Check:\par
+\par
+PHP errors\par
+JS errors\par
+404s\par
+API errors\par
+database errors\par
+broken links\par
+missing images\par
+missing CSS\par
+missing JS\par
+Accessibility\par
+\par
+Check:\par
+\par
+keyboard\par
+focus\par
+ESC\par
+screen-reader labels\par
+contrast\par
+semantic controls\par
+Responsive\par
+\par
+Check:\par
+\par
+mobile\par
+tablet\par
+desktop\par
+RTL\par
+\par
+Check:\par
+\par
+Urdu\par
+Arabic\par
+62. Hero approval gate\par
+\par
+Before final production certification, stop at this gate:\par
+\par
+HERO ARTWORK APPROVED?\par
+\par
+If:\par
+\par
+YES\par
+\par
+continue.\par
+\par
+If:\par
+\par
+NO\par
+\par
+do not claim visual finalization.\par
+\par
+The file can be replaced without redesigning the hero template.\par
+\par
+63. Production certification gate\par
+\par
+Only mark:\par
+\par
+PRODUCTION CERTIFIED\par
+\par
+when all of the following are true:\par
+\par
+[ ] Hero approved\par
+[ ] noorsafar-core delivered\par
+[ ] All PHP syntax checks pass\par
+[ ] Theme package rebuilt\par
+[ ] Core package rebuilt\par
+[ ] Clean WordPress installation succeeds\par
+[ ] Homepage passes\par
+[ ] All major templates pass\par
+[ ] CPTs pass\par
+[ ] Booking passes\par
+[ ] Prayer functionality passes\par
+[ ] Forms pass\par
+[ ] WhatsApp CTA passes\par
+[ ] Quick View passes\par
+[ ] Mobile passes\par
+[ ] RTL passes\par
+[ ] Accessibility checks pass\par
+[ ] Console clean\par
+[ ] Network errors resolved\par
+[ ] SEO/schema verified\par
+[ ] Assets verified\par
+[ ] No critical security issue\par
+64. Final deliverable\par
+\par
+The final client/deployment package should contain:\par
+\par
+noorsafar-theme.zip\par
+noorsafar-core.zip\par
+NOORSAFAR-MASTER-BUILD-SPEC.MD\par
+INSTALLATION-GUIDE.md\par
+STAGING-QA-REPORT.md\par
+CHANGELOG.md\par
+\par
+Optional:\par
+\par
+SEED-PACKAGES.md\par
+\par
+if demo content is intended to remain available.\par
+\par
+65. Final rule for Claude\par
+\par
+The most important instruction is:\par
+\par
+Do not consider the task complete merely because the ZIP builds successfully.\par
+\par
+There are three different levels:\par
+\par
+Level 1 \f1\emdash  Structural\par
+Files exist\par
+ZIP works\par
+PHP structure works\par
+JS syntax works\par
+Assets resolve\par
+Level 2 \emdash  Visual\par
+Reference layout reproduced\par
+Responsive design works\par
+Brand system implemented\par
+Images correct\par
+Components visually consistent\par
+Level 3 \emdash  Runtime/production\par
+WordPress actually runs it\par
+CPTs work\par
+Core plugin works\par
+Forms submit\par
+Booking works\par
+APIs work\par
+Quick View works\par
+Mobile works\par
+RTL works\par
+Accessibility works\par
+No critical errors\par
+\par
+Only Level 3 qualifies for production certification.\par
+\par
+The exact instruction to give Claude\par
+\par
+You can place this at the beginning of the Claude task:\par
+\par
+Use the existing NoorSafar project as the authoritative baseline. Do not rebuild or redesign the theme unnecessarily. First inspect the existing package and master specification. Preserve the completed visual reconstruction. Your job is to complete the missing functional/core-plugin layer, validate every PHP/JS component, perform clean WordPress staging QA, fix defects at source, and produce a genuinely upload-ready theme and core plugin. Do not declare production readiness until the runtime QA checklist passes. If something is ambiguous, follow the existing master specification and current architecture rather than inventing a new design or technology. Treat visual completion, structural validation, and production certification as three separate gates.\par
+\par
+That is the instruction set I recommend transferring to Claude. It gives Claude a clear chain of authority: existing package \f2\u8594?\f1  \f0 master specification \f2\u8594?\f1  \f0 core plugin specification \f2\u8594?\f1  \f0 runtime testing \f2\u8594?\f1  \f0 defect correction \f2\u8594?\f1  \f0 final ZIP, rather than allowing the AI to repeatedly redesign the website.\lang9\par
+}
+ 
